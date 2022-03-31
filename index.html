@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Samsung Chat Portal</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <div class="wrapper full-height">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <!-- <h3>Messenger Chat Bot</h3> -->
+                    <div class="card agent-profile-div">
+                        <div class="agent-imgs-div">
+                            <img class="agent-profile" src="img/img_avatar1.jpg" alt="Card image">
+                        </div>
+                        <div class="card-body">
+                            <p class="">Aung Nai Oo</p>
+                            <p class="">Agent (test)</p>
+                        </div>
+                    </div>
+                    <div class="inbox-replied-div">
+                        <button class="btn inbox-btn">Inbox</button>
+                        <button class="btn replied-btn unactive">Replied</button>
+                    </div>
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control search-message-chat" placeholder="Search Customers">
+                    </div>
+                    <div class="chat-messages-div">
+                        <ul class="chat-messages-ul">
+                            <li>
+                                <div class="row chats">
+                                    <div class="chat-imgs-div">
+                                        <img class="chat-profile" src="img/img_avatar2.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="chat-contents">
+                                        <div class="mt-2 chat-contents-wrap">
+                                            <p class="chat-names">Uncle Aung</p>
+                                            <div class="messages-wrap">
+                                                <p class="messages">Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now?</p>
+                                            </div>
+                                            <small class="chat-dates">11:10 pm | Yesterday</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row chats">
+                                    <div class="chat-imgs-div">
+                                        <img class="chat-profile" src="img/img_avatar2.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="chat-contents">
+                                        <div class="mt-2 chat-contents-wrap">
+                                            <p class="chat-names">Uncle Aung</p>
+                                            <div class="messages-wrap">
+                                                <p class="messages">Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now?</p>
+                                            </div>
+                                            <small class="chat-dates">11:10 pm | Yesterday</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row chats">
+                                    <div class="chat-imgs-div">
+                                        <img class="chat-profile" src="img/img_avatar2.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="chat-contents">
+                                        <div class="mt-2 chat-contents-wrap">
+                                            <p class="chat-names">Uncle Aung</p>
+                                            <div class="messages-wrap">
+                                                <p class="messages">Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now?</p>
+                                            </div>
+                                            <small class="chat-dates">11:10 pm | Yesterday</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row chats">
+                                    <div class="chat-imgs-div">
+                                        <img class="chat-profile" src="img/img_avatar2.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="chat-contents">
+                                        <div class="mt-2 chat-contents-wrap">
+                                            <p class="chat-names">Uncle Aung</p>
+                                            <div class="messages-wrap">
+                                                <p class="messages">Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now?</p>
+                                            </div>
+                                            <small class="chat-dates">11:10 pm | Yesterday</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row chats">
+                                    <div class="chat-imgs-div">
+                                        <img class="chat-profile" src="img/img_avatar2.jpeg" alt="Card image">
+                                    </div>
+                                    <div class="chat-contents">
+                                        <div class="mt-2 chat-contents-wrap">
+                                            <p class="chat-names">Uncle Aung</p>
+                                            <div class="messages-wrap">
+                                                <p class="messages">Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now? Hello! How much S21 right now?</p>
+                                            </div>
+                                            <small class="chat-dates">11:10 pm | Yesterday</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light"><button type="button" id="sidebarCollapse" class="btn"><i class="fa fa-align-justify"></i></button><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#">Phone & Tablet<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Home Appliances & Others</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Finished</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card message-customer-bar">
+                            <div class="card-body">
+                                <div class="chat-bar-profile-div">
+                                    <div class="chat-imgs-div">
+                                        <img class="chat-bar-profile" src="img/img_avatar2.jpeg" alt="Card image">
+                                    </div>
+                                    <p class="customer-name">Uncle Aung</p>
+                                </div>
+                                <div class="chat-bar-done-div">
+                                    <button class="btn">Mask As Done</button>
+                                    <button class="btn">Forward</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="messages-box">
+                            <ul>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <li>
+                                            <div class="customer-message-text">
+                                                <div class="msg">
+                                                    <p>Hello</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:00 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li class="agent-message-li">
+                                            <div class="agent-message-text">
+                                                <div class="msg">
+                                                    <p>Samsung ထုတ်ကုန်များနှင့်ပတ်သက်ပြီးဘာများကူညီပေးရမလဲခင်ဗျာ။</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:06 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li class="agent-message-li">
+                                            <div class="agent-message-text">
+                                                <div class="msg">
+                                                    <p>Samsung ၀န်ဆောင်မှုများနှင့်ပတ်သက်၍ သိလိုသမျှကို Samsung Contact Center 01- 2399888 ကိုဆက်သွယ်မေးမြန်းနိုင်သလို Samsung Members > Live Chat တို့မှလဲ နေ့စဥ်ပိတ်ရက်မရှိ မနက် ၇ နာရီမှ ည ၁၁ နာရီ အတွင်းမေးမြန်းနိုင်မည်ဖြစ်ပါတယ် ခင်ဗျာ။ ယခုလိုဆက်သွယ်မေးမြန်းမှုအတွက်ကျေးဇူးတင်ပါတယ် ခင်ဗျာ။ မင်္ဂလာရှိသော နေ့လေးဖြစ်ပါစေ ခင်ဗျာ။</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:06 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li>
+                                            <div class="customer-message-text">
+                                                <div class="msg">
+                                                    <p>Hello! How much S21 right now?</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:10 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li>
+                                            <div class="customer-message-text">
+                                                <div class="msg">
+                                                    <p>Hello</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:00 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li class="agent-message-li">
+                                            <div class="agent-message-text">
+                                                <div class="msg">
+                                                    <p>Samsung ထုတ်ကုန်များနှင့်ပတ်သက်ပြီးဘာများကူညီပေးရမလဲခင်ဗျာ။</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:06 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li class="agent-message-li">
+                                            <div class="agent-message-text">
+                                                <div class="msg">
+                                                    <p>Samsung ၀န်ဆောင်မှုများနှင့်ပတ်သက်၍ သိလိုသမျှကို Samsung Contact Center 01- 2399888 ကိုဆက်သွယ်မေးမြန်းနိုင်သလို Samsung Members > Live Chat တို့မှလဲ နေ့စဥ်ပိတ်ရက်မရှိ မနက် ၇ နာရီမှ ည ၁၁ နာရီ အတွင်းမေးမြန်းနိုင်မည်ဖြစ်ပါတယ် ခင်ဗျာ။ ယခုလိုဆက်သွယ်မေးမြန်းမှုအတွက်ကျေးဇူးတင်ပါတယ် ခင်ဗျာ။ မင်္ဂလာရှိသော နေ့လေးဖြစ်ပါစေ ခင်ဗျာ။</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:06 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li>
+                                            <div class="customer-message-text">
+                                                <div class="msg">
+                                                    <p>Hello! How much S21 right now?</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:10 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li>
+                                            <div class="customer-message-text">
+                                                <div class="msg">
+                                                    <p>Hello</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:00 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li class="agent-message-li">
+                                            <div class="agent-message-text">
+                                                <div class="msg">
+                                                    <p>Samsung ထုတ်ကုန်များနှင့်ပတ်သက်ပြီးဘာများကူညီပေးရမလဲခင်ဗျာ။</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:06 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li class="agent-message-li">
+                                            <div class="agent-message-text">
+                                                <div class="msg">
+                                                    <p>Samsung ၀န်ဆောင်မှုများနှင့်ပတ်သက်၍ သိလိုသမျှကို Samsung Contact Center 01- 2399888 ကိုဆက်သွယ်မေးမြန်းနိုင်သလို Samsung Members > Live Chat တို့မှလဲ နေ့စဥ်ပိတ်ရက်မရှိ မနက် ၇ နာရီမှ ည ၁၁ နာရီ အတွင်းမေးမြန်းနိုင်မည်ဖြစ်ပါတယ် ခင်ဗျာ။ ယခုလိုဆက်သွယ်မေးမြန်းမှုအတွက်ကျေးဇူးတင်ပါတယ် ခင်ဗျာ။ မင်္ဂလာရှိသော နေ့လေးဖြစ်ပါစေ ခင်ဗျာ။</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:06 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <li>
+                                            <div class="customer-message-text">
+                                                <div class="msg">
+                                                    <p>Hello! How much S21 right now?</p>
+                                                </div>
+                                                <div class="date-time">
+                                                    <small>11:10 pm | Yesterday</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="send-box">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-10">
+                                        <input type="text" class="form-control" placeholder="Enter text to send" name="text-message">
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="btn"><i class="fa fa-smile-o"></i></button>
+                                        <button class="btn"><i class="fa fa-file"></i></button>
+                                        <button class="btn"><i class="fa fa-paper-plane"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group has-search answer-has-search">
+                            <span class="fa fa-search form-control-feedback answersets-feedback"></span>
+                            <input type="text" class="form-control search-answersets" placeholder="Search Anwsersets">
+                        </div>
+                        <span class="answersets-steps">Current Step - <p>Promo</p></span>
+                        <div class="answersets-scroll-div">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Samsung Galaxy Note 10 လေး ကတော့ 1,499,000  Kyats ဖြစ်ပြီး Display ပိုင်းမှာတော့ Screen Size အနေနဲ့ 6.3 Inch Dynamic AMOLED ကိုအသုံးပြုပေးထားပါတယ်ခင်ဗျာ..။Storage လေးကတော့ RAM(8GB)/ROM(256GB) ပါဝင်မှာဖြစ်ပါတယ်ခင်ဗျာ။Sim Card Type လေး က Dual(LTE)အမျိုးအစားဖြစ်ပါတယ်ခင်ဗျာ...။Camera အပိုင်းမှာတော့ Rear Camera အနေနဲ့  Triple Camera,Ultra Wide 16MP,Wide 12MP,Tele 12MP, ဖြစ်ပြီး Front Camera အနေနဲ့တော့  10MP ဖြစ်ပါတယ်ခင်ဗျာ...။Battery ပမာဏလေး က 3,500 mAh  ဖြစ်ပြီး USB Type C Super Fast Charging နှင့် Wireless Chargingနှစ်မျိုး စလုံးနှင့် အားသွင်းနိုင်မှာဖြစ်ပါတယ်ခင်ဗျာ..။ထူးခြားချက်လေးအနေနဲ့က တော့ S Pen လေး ကို Air Action(Air Click/Remote Gesture) Control ပြုလုပ်နိုင်အောင် Upgrade ပြုလုပ်ထားပါတယ်ခင်ဗျာ..။Security လေး အနေနဲ့ Ultrasonic Fingerprint,Face Recognition(2D) နှစ်မျိူးစလုံး ပါဝင်ပါတယ်ခင်ဗျာ...။</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>ဟုတ်ကဲ့ပါခင်ဗျာ..။ Samsung Galaxy Note10 Plus (12/256 GB )အရောင်များမှာ Aura Glow , Aura Black , Aura White ဖြစ်ပါတယ်ခင်ဗျာ.။ဟုတ်ကဲ့ပါခင်ဗျာ..။ Samsung Galaxy Note10 Plus (12/256 GB )အရောင်များမှာ Aura Glow , Aura Black , Aura White ဖြစ်ပါတယ်ခင်ဗျာ.။</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>ဟုတ်ကဲ့ပါခင်ဗျာ..။ Samsung Galaxy Note10 Plus (12/256 GB )အရောင်များမှာ Aura Glow , Aura Black , Aura White ဖြစ်ပါတယ်ခင်ဗျာ.။ဟုတ်ကဲ့ပါခင်ဗျာ..။ Samsung Galaxy Note10 Plus (12/256 GB )အရောင်များမှာ Aura Glow , Aura Black , Aura White ဖြစ်ပါတယ်ခင်ဗျာ.။</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

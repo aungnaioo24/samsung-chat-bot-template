@@ -1,0 +1,410 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+div.full-height {
+    height: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 400px;
+    max-width: 400px;
+    background: #fafafa;
+    color: #000;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -400px;
+}
+
+#sidebar .sidebar-header {
+    background: #fafafa;
+}
+
+.content-wrapper {
+    padding: 15px;
+}
+
+@media(max-width:768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0px;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+div.agent-profile-div {
+    border: 0px;
+    background: #fafafa;
+}
+
+div.agent-profile-div div.card-body {
+    padding: 1vh 1vw;
+}
+
+div.agent-profile-div div.card-body p {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+div.agent-imgs-div {
+    display: flex;
+    margin: 1vh auto;
+    margin-top: 3vh;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+img.agent-profile {
+    height: 80px;
+}
+
+div.inbox-replied-div {
+    display: flex;
+    justify-content: center;
+}
+
+div.inbox-replied-div button.inbox-btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+div.inbox-replied-div button.replied-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+img.chat-profile {
+    height: 80px;
+}
+
+hr.chat-profile-separater {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.has-search {
+    margin-top: 1vh;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+.has-search .form-control {
+    padding-left: 2vw;
+}
+
+.has-search .search-message-chat {
+    border-radius: 50px;
+    height: 40px;
+}
+
+.has-search .search-answersets {
+    height: 60px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.has-search .answersets-feedback {
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
+}
+
+i.fa-align-justify {
+    color: #999;
+}
+
+ul.chat-messages-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.chats {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 50px;
+    background-color: rgb(238, 238, 238);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.chat-messages-div {
+    min-height: 65vh;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+
+ul.chat-messages-ul div.chat-imgs-div {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+div.chats:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+div.chats:hover div.chat-imgs-div {
+    opacity: 80%;
+}
+
+ul.chat-messages-ul div.chat-contents {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 260px;
+    height: 80px;
+}
+
+ul.chat-messages-ul div.chat-contents small {
+    width: 100%;
+}
+
+div.chat-contents small {
+    color: rgb(71, 71, 71);
+}
+
+ul.chat-messages-ul li div div p {
+    margin: 0;
+}
+
+ul.chat-messages-ul li div div p.chat-names {
+    font-size: 18px;
+}
+
+ul.chat-messages-ul div.messages-wrap {
+    height: 21px;
+    overflow: hidden;
+}
+
+ul.chat-messages-ul li div div p.messages {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+ul.chat-messages-ul div.chat-contents-wrap small.chat-dates {
+    display: flex;
+    justify-content: end;
+}
+
+img.chat-bar-profile {
+    height: 50px;
+}
+
+div.chat-pool-icons ul div.chat-imgs-div:hover img.chat-pool-profile {
+    opacity: 50%;
+}
+
+div.card div.message-customer-bar div.card-body {
+    padding: 10px;
+}
+
+div.message-customer-bar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+div.message-customer-bar div.chat-imgs-div {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 10px;
+}
+
+div.message-customer-bar p.customer-name {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+div.message-customer-bar div.chat-bar-profile-div {
+    float: left;
+    width: 600px;
+}
+
+div.message-customer-bar div.chat-bar-done-div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+div.message-customer-bar div.chat-bar-done-div button {
+    margin-right: 5px;
+}
+
+div.messages-box {
+    overflow-y: scroll;
+    height: 67vh;
+}
+
+div.messages-box div.row {
+    margin: 0;
+}
+
+div.messages-box ul, div.messages-box ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+div.messages-box div.agent-message-text {
+    float: right;
+    margin-right: 10px;
+}
+
+div.messages-box div.customer-message-text, div.messages-box div.agent-message-text {
+    margin-bottom: 20px;
+}
+
+div.messages-box div.customer-message-text div.msg, div.messages-box div.agent-message-text div.msg {
+    max-width: 600px;
+    background-color: rgb(238, 238, 238);
+    padding: 15px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    display: inline-block;
+}
+
+div.messages-box div.customer-message-text div.msg p, div.messages-box div.agent-message-text div.msg p {
+    margin: 0;
+}
+
+div.messages-box div.customer-message-text div.date-time small, div.messages-box div.agent-message-text div.date-time small {
+    color: rgb(71, 71, 71);
+}
+
+div.messages-box div.agent-message-text div.msg {
+    background-color: #12279e;
+    color: #fff;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+}
+
+div.messages-box div.agent-message-text div.date-time small {
+    float: right;
+}
+
+div.send-box {
+    margin-top: 20px;
+}
+
+div.send-box button.btn, div.message-customer-bar button.btn, div.inbox-replied-div button.btn {
+    background-color: #12279e;
+    border: #12279e;
+    color: #fff;
+}
+
+div.send-box button.btn:hover, div.message-customer-bar button.btn:hover, div.inbox-replied-div button.btn:hover {
+    background-color: #08134e;
+    border: #08134e;
+}
+
+div.inbox-replied-div button.unactive {
+    background-color: #fff;
+    color: #12279e;
+    border: 1px solid #12279e;
+}
+
+div.inbox-replied-div button.btn:hover {
+    background-color: #12279e;
+    border: #12279e;
+    color: #fff;
+}
+
+.answer-has-search {
+    padding: 0;
+}
+
+span.answersets-steps p {
+    font-weight: bold;
+    color: #12279e;
+    display: inline-block;
+}
+
+div.answersets-scroll-div {
+    height: 70vh;
+    overflow-y: scroll;
+    margin-top: 15px;
+}
+
+div.answersets-scroll-div div.card {
+    margin-bottom: 16px;
+    margin-right: 5px;
+}
